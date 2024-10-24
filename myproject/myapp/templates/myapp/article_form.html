@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Додати статтю</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'myapp/style.css' %}">
+</head>
+<body>
+    <h1 id="title">Додати статтю</h1>
+    <form id="form2" method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button id="button2" type="submit">Зберегти</button>
+    </form>
+    <a id="a2" href="{% url 'article_list' %}">Назад до списку статей</a>
+</body>
+</html>

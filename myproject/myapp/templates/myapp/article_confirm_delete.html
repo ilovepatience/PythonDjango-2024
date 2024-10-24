@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Видалити статтю</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'myapp/style.css' %}">
+</head>
+<body>
+    <h1 id="title">Видалити статтю</h1>
+    <p id="p3">Ви впевнені, що хочете видалити "{{ article.title }}"?</p>
+    <form id="form3" method="post">
+        {% csrf_token %}
+        <button id="button3" type="submit">Так, видалити</button>
+    </form>
+    <a id="a3" href="{% url 'article_list' %}">Скасувати</a>
+</body>
+</html>

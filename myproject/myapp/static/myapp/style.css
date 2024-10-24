@@ -1,0 +1,155 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: lightgrey;
+}
+
+#title {
+    color: #333;
+    text-align: center;
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+#a1 {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+#a1:hover {
+    background-color: #45a049;
+}
+
+#ul1 {
+    list-style-type: none;
+    padding: 0;
+}
+
+#li1 {
+    background-color: #fff;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#a1_1 {
+    color: #ff4d4d;
+    text-decoration: none;
+}
+
+#a1_1:hover {
+    color: #ff1a1a;
+    text-decoration: underline;
+}
+
+#form2 {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: 0 auto;
+    display: block;
+    box-sizing: border-box;
+}
+
+#form2 input,
+#form2 textarea,
+#form2 select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+#button2 {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    display: block;
+    margin: 20px auto;
+    width: 50%;
+    text-align: center;
+}
+
+#button2:hover {
+    background-color: #45a049;
+}
+
+#a2 {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+#a2:hover {
+    background-color: #0056b3;
+}
+
+}
+
+#a2:hover {
+    text-decoration: underline;
+}
+
+#p3 {
+    text-align: center;
+    font-size: 18px;
+    color: #444;
+    margin-bottom: 20px;
+}
+
+#form3 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#button3 {
+    background-color: #ff4d4d;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#button3:hover {
+    background-color: #e60000;
+}
+
+#a3 {
+    display: inline-block;
+    margin-top: 10px;
+    text-align: center;
+    text-decoration: none;
+    color: #007BFF;
+    font-size: 16px;
+}
+
+#a3:hover {
+    text-decoration: underline;
+}

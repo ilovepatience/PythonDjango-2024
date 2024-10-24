@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Список статей</title>
+        {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'myapp/style.css' %}">
+</head>
+<body>
+    <h1 id="title" >Список статей</h1>
+    <a id="a1" href="{% url 'article_create' %}">Додати статтю</a>
+    <ul id="ul1">
+        {% for article in articles %}
+            <li id="li1">
+                {{ article.title }} - <a id="a1_1" href="{% url 'article_delete' article.pk %}">Видалити</a>
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
